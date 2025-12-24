@@ -1,10 +1,10 @@
 # SQL Injection Detection Techniques
 
 ## Overview
-This repository contains the dataset and experimental results for a study on SQL Injection (SQLi) detection techniques. The study compares pattern matching, machine learning, deep learning, and hybrid deep learning approaches under controlled experimental conditions to evaluate their detection performance and limitations.
+This repository contains the dataset and experimental results for a study on SQL Injection (SQLi) detection techniques. The study compares signature-based, machine learning, deep learning, and hybrid deep learning approaches under controlled experimental conditions to evaluate their detection performance and limitations.
 
 The following techniques are implemented:
-- Pattern Matching using **Aho–Corasick**
+- Signature-Based using **Aho–Corasick**
 - Machine Learning using **Support Vector Machine (SVM)**
 - Deep Learning using **Bidirectional LSTM (Bi-LSTM)**
 - Hybrid Deep Learning using **CNN–BiLSTM**
