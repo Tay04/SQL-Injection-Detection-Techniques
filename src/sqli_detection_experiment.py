@@ -7,7 +7,7 @@ Created on Sun Dec 14 13:17:12 2025
 
 # =========================================
 # SQL Injection Detection
-# Pattern Matching | ML | DL | Hybrid
+# Signature-Based | ML | DL | Hybrid
 # =========================================
 import time
 import pandas as pd
@@ -76,7 +76,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 
 # =========================================
-# Pattern Matching (Aho-Corasick)
+# Signature-Based (Aho-Corasick)
 # =========================================
 signatures = [
     "' or '1'='1",
@@ -105,11 +105,11 @@ end_time = time.time()
 
 latency_pm = (end_time - start_time) / len(X_test)
 
-print("\nPattern Matching (Aho-Corasick) Results:")
+print("\nSignature-Based (Aho-Corasick) Results:")
 print(classification_report(y_test, y_pred_pm))
 print(f"Latency per query: {latency_pm:.6f} seconds")
 
-plot_confusion_matrix(y_test, y_pred_pm, "Confusion Matrix – Pattern Matching (Aho-Corasick)")
+plot_confusion_matrix(y_test, y_pred_pm, "Confusion Matrix – Signature-Based (Aho-Corasick)")
 metrics_pm = extract_metrics(y_test, y_pred_pm)
 
 # =========================================
@@ -298,4 +298,5 @@ plot_metric(accuracy, "Accuracy Comparison", "Accuracy")
 plot_metric(precision, "Precision Comparison", "Precision")
 plot_metric(recall, "Recall Comparison", "Recall")
 plot_metric(f1, "F1-score Comparison", "F1-score")
+
 
