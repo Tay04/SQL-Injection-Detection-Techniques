@@ -7,7 +7,7 @@ The following techniques are implemented:
 - Signature-Based using **Aho–Corasick**
 - Machine Learning using **Support Vector Machine (SVM)**
 - Deep Learning using **Bidirectional LSTM (Bi-LSTM)**
-- Hybrid Deep Learning using **CNN–BiLSTM**
+- Hybrid using **CNN–BiLSTM**
 
 
 ## Directory Description
