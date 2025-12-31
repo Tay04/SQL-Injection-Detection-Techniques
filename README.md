@@ -17,6 +17,8 @@ The following techniques are implemented:
   - **confusion_matrices/**: A confusion matrix is used to show the performance of a classification model in a table.
   - **classification_reports/**: Classification reports based on the confusion matrix.
   - **metrics_comparison/**: Line graphs comparing evaluation metrics across detection techniques.
+  - **training_model/**: Stores trained model images.
+  - **visualization_dataset/**: Stores plots showing dataset characteristics like class distribution, query length, and SQL keyword frequency.
 
 ## Dataset Details
 `SQLiV3.csv`: 
