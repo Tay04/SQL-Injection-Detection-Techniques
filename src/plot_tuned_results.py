@@ -2,7 +2,7 @@
 """
 Created on Thu Jan  1 03:20:07 2026
 
-@author: TAY ZHAO XIN
+@author: TAY
 Description:
 Line graph visualization for TUNED SQL Injection Detection models
 """
@@ -49,4 +49,5 @@ def plot_metric(metric, title, ylabel):
 plot_metric("accuracy", "Accuracy Comparison (Tuned Models)", "Accuracy")
 plot_metric("precision", "Precision Comparison (Tuned Models)", "Precision")
 plot_metric("recall", "Recall Comparison (Tuned Models)", "Recall")
+
 plot_metric("f1", "F1-score Comparison (Tuned Models)", "F1-score")
