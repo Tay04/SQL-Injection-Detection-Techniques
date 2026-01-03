@@ -80,10 +80,18 @@ print(counts)
 
 # --- Pie Chart ---
 plt.figure(figsize=(6, 6))
+
+def make_autopct(values):
+    def my_autopct(pct):
+        total = sum(values)
+        val = int(round(pct*total/100.0))
+        return '{p:.1f}%\n({v:d})'.format(p=pct, v=val)
+    return my_autopct
+    
 plt.pie(
     counts,
     labels=labels,
-    autopct=lambda p: f"{p:.1f}%\n({int(p*total/100)})",
+    autopct=make_autopct(counts),
     startangle=90
 )
 
@@ -357,3 +365,4 @@ tuned_results = pd.DataFrame([
 
 tuned_results.to_csv("tuned_metrics.csv", index=False)
 print("Tuned metrics saved to tuned_metrics.csv")
+
