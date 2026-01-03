@@ -26,11 +26,11 @@ The following techniques are implemented:
 - Publicly available on Kaggle: SQL-Injection-Dataset by sajid576 (https://www.kaggle.com/datasets/sajid576/sql-injection-dataset)
 
 ## Data Distribution
-| Category | Count |
-|--------|------|
-| Total Queries | 30,917 |
-| Benign Queries (Label 0) | 19,536 |
-| Malicious Queries (Label 1) | 11,381 |
+| Category | Count | Percentage
+|--------|------|---------|
+| Benign Queries (Label 0) | 19,536 | 63.2% 
+| Malicious Queries (Label 1) | 11,381 | 36.8%
+| Total Queries | 30,917 | 100%
 
 ## Tools and Technologies Used
 - **Programming Language**: Python 3.12
