@@ -1,7 +1,7 @@
 # SQL Injection Detection Techniques
 
 ## Overview
-This repository contains the dataset and experimental results for a study on SQL Injection (SQLi) detection techniques. The study compares signature-based, machine learning, deep learning, and hybrid deep learning approaches under controlled experimental conditions to evaluate their detection performance and limitations.
+This repository contains the dataset and experimental results for a study on SQL Injection (SQLi) detection techniques. The study compares signature-based, machine learning, deep learning, and hybrid approaches under controlled experimental conditions to evaluate their detection performance and limitations.
 
 The following techniques are implemented:
 - Signature-Based (**Aho–Corasick**)
@@ -20,21 +20,17 @@ The following techniques are implemented:
   - **training_model/**: Stores trained model images.
   - **visualization_dataset/**: Stores plots showing dataset characteristics like class distribution, query length, and SQL keyword frequency.
 
+
 ## Dataset Details
 `SQLiV3.csv`: 
 - Contains labelled SQL queries, including benign and malicious queries
 - Publicly available on Kaggle: SQL-Injection-Dataset by sajid576 (https://www.kaggle.com/datasets/sajid576/sql-injection-dataset)
 
-## Data Distribution
-| Category | Count | Percentage
-|--------|------|---------|
-| Benign Queries (Label 0) | 19,536 | 63.2% 
-| Malicious Queries (Label 1) | 11,381 | 36.8%
-| Total Queries | 30,917 | 100%
 
 ## Tools and Technologies Used
 - **Programming Language**: Python 3.12
 - **IDE**: Spyder (Anaconda Distribution)
+
 
 ## Libraries Used
 - Pandas
