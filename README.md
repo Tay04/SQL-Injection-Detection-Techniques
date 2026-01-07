@@ -26,6 +26,7 @@ The following techniques are implemented:
     - Contains labelled SQL queries, including benign and malicious queries.
     - Publicly available on Kaggle: SQL-Injection-Dataset by sajid576 (https://www.kaggle.com/datasets/sajid576/sql-injection-dataset)
 - `nosqlDataset.txt`:
+    - Combined `mongodb_benign.txt` and `mongodb_injection.txt`.
     - Contains labelled NoSQL queries focusing on MongoDB injection patterns (e.g., `$gt`, `$ne`, `$regex`).
     - Publicly available on GitHub: nosql-injection-detection by anonymous1363101 (https://github.com/anonymous1363101/nosql-injection-detection)
 
